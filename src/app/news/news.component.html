@@ -1,0 +1,14 @@
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Tag</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let news of (news$ | async)?.news">
+      <td>{{ news.title }}</td>
+      <td>{{ news.tag }}</td>
+    </tr>
+  </tbody>
+</table>

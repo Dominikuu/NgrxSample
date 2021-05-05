@@ -1,15 +1,11 @@
 import { ActionReducerMap } from "@ngrx/store";
-import { CounterReducer } from "./counter/counter.reducer";
-
-import { TodoReducer } from "./todo/todo.reducer";
-import { TodoState } from "./todo/todo.state";
+import { NewsReducer } from "./news/news.reducer";
+import { NewsState } from "./news/news.state";
 
 export interface AppState {
-  counterState: number;
-  todoState: TodoState;
+  NewsState: NewsState;
 }
 
 export const reducers: ActionReducerMap<AppState> = {
-  counterState: CounterReducer,
-  todoState: TodoReducer,
+  NewsState: NewsReducer,
 };
